@@ -1,0 +1,244 @@
+
+.titulo {
+    text-align: center;
+    padding-top: 1%; /* Reduzido para compactar */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #292b2d; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em; /* Aumentado */
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em; /* Aumentado */
+}
+
+.imgLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%; /* Reduzido para compactar */
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona profundidade */ 
+}
+
+.form-login {
+  max-width: 400px;
+  margin: 10px auto 0; /* Reduzido para aproximar do texto */
+  padding: 20px;
+  background-color: #fff; /* Fundo branco para o formulário */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+  display: flex;
+  flex-direction: column; /* Alinha labels e inputs verticalmente */
+  align-content: center;
+}
+
+.form-login label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057; /* Cinza escuro para contraste */
+}
+
+.form-login input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da; /* Borda neutra como Bootstrap */
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-login input:focus {
+    border-color: #934daf; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(146, 75, 167, 0.5);
+}
+
+#btn-logar {
+    width: 100%;
+    padding: 12px;
+    background-color: #742183; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#btn-logar:hover {
+    background-color: #54185e; /*roxo mais escuro*/
+}
+
+#formJogos {
+    width: 600px; /* Aumentado para maior */
+    padding: 20px; /* Menos padding */
+    background-color: #f0f0f0; /* Cinza claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 0; /* Mesmo alinhamento da tela de login */
+}
+
+#formJogos input {
+    padding: 12px;
+    margin-bottom: 15px; /* Menos espaçamento entre inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#formJogos input:focus {
+    border-color: #8a2be2; /* Roxo */
+    outline: none;
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botoes button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botoes button[type="submit"] {
+    background-color: #8a2be2; /* Roxo para enviar */
+    color: white;
+}
+
+.botoes button[type="submit"]:hover {
+    background-color: #6a1b9a; /* Roxo mais escuro */
+}
+
+.botoes button[type="button"] {
+    background-color: #808080; /* Cinza para limpar */
+    color: white;
+}
+
+.botoes button[type="button"]:hover {
+    background-color: #5a5a5a; /* Cinza mais escuro */
+}
+
+#tabelaProdutos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; /* Mesmo espaçamento do form */
+    background-color: #f0f0f0; /* Mesmo cinza do form */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tabelaProdutos th, #tabelaProdutos td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabelaProdutos th {
+    background-color: #8a2be2; /* Roxo para cabeçalho */
+    color: white;
+}
+
+#tabelaProdutos tr:nth-child(even) {
+    background-color: #e0e0e0; /* Cinza alternado */
+}
+
+#tabelaProdutos tr:hover {
+    background-color: #d0d0d0;
+}
+
+.container {
+    display: block; /* Alterado para bloco para não centralizar verticalmente */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .titulo {
+        padding-top: 10%;
+        font-size: 1.5em; /* Ajuste de tamanho da fonte */
+    }
+
+    .imgLogo {
+        width: 50%; /* Maior em telas pequenas */
+    }
+
+    #formJogos {
+        width: 90%; /* Largura responsiva */
+        padding: 20px; /* Menos padding */
+    }
+
+    #formJogos input {
+        margin-bottom: 15px; /* Menos espaçamento */
+    }
+
+    .botoes {
+        flex-direction: column; /* Botões empilhados */
+        gap: 10px; /* Espaço entre botões */
+    }
+
+    .botoes button {
+        width: 100%; /* Botões full width */
+    }
+
+    #tabelaProdutos {
+        overflow-x: auto; /* Scroll horizontal para tabela */
+        font-size: 0.9em; /* Fonte menor */
+    }
+
+    #tabelaProdutos th, #tabelaProdutos td {
+        padding: 8px; /* Padding menor */
+        white-space: nowrap; /* Evita quebra de linha */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2em;
+    }
+
+    .imgLogo {
+        width: 70%;
+    }
+
+    #formJogos {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #tabelaProdutos {
+        font-size: 0.8em;
+    }
+}
+
+
+footer {
+    background-color: #f0f0f0; /* Cinza claro, combinando com o tema */
+    color: #292b2d; /* Cor do texto */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}

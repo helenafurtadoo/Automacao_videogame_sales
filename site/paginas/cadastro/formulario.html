@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <title>Formulário de cadastro dos produtos</title>
+
+</head>
+
+<body>
+    <!---CABEÇALHO E LOGO-->
+    <header class="text-center">
+        <div class="logo">
+            <img src="/site/imagens/logo_futuristicas_salesdb.png" class="img-thumbnail" alt="...">
+        </div>
+        <div class="titulo-form">
+            <h2>Formulário do cadastro de jogos</h2>
+        </div>
+    </header>
+
+    <!--FORMULARIO DE CADASTRO DOS JOGOS-->
+    <main class="container d-flex justify-content-center">
+        <form id="formJogos">
+            <input type="text" id="ranking" placeholder="Ranking de vendas" required>
+            <input type="text" id="nome" placeholder="Nome do jogo" required>
+            <input type="text" id="plataforma" placeholder="Plataforma de lançamento" required>
+            <input type="text" id="ano" placeholder="Ano de lançamento" required>
+            <input type="text" id="genero" placeholder="Gênero do jogo " required>
+            <input type="text" id="editora" placeholder="Editora de publicação" required>
+            <input type="text" id="vendaTotal" placeholder="Total de vendas (em milões)" required>
+
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+                <button type="button" id="limparTabela">Limpar</button>
+            </div>
+        </form>
+
+    </main>
+
+    <h3>Jogos cadastrados</h3>
+    <table id="tabelaProdutos" border="1">
+        <thead>
+            <tr>
+                <th>Ranking</th>
+                <th>Nome do jogo</th>
+                <th>Plataforma de lançamento</th>
+                <th>Ano de lançamento</th>
+                <th>Gênero do jogo</th>
+                <th>Editora</th>
+                <th>Vendas totais</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+            <!--linhas serao adicionadas aqui dinamicamente-->
+        </tbody>
+    </table>
+
+
+    <script src="cadastro.js"></script>
+</body>
+
+</html>
