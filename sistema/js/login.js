@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () { //capturar apenas el
                 return;
             }
             // redireciona para a pagina do formulario
-            window.location.href = "../cadastro/formulario.html";
+            window.location.href = "formulario.html";
         }
         )
     }
