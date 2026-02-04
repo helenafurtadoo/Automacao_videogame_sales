@@ -168,6 +168,8 @@ h3 {
 .container {
     display: block; /* Alterado para bloco para não centralizar verticalmente */
     margin: 0 auto;
+    justify-content: center;
+    flex: 1;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -238,6 +240,7 @@ footer {
     text-align: center;
     padding: 20px;
     bottom: 0;
+    height: 70px;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
