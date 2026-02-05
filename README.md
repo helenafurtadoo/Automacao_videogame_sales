@@ -39,6 +39,12 @@ A automação utiliza uma base de dados no formato `.csv`, contendo campos como:
 
 Cada linha do arquivo representa um cadastro no sistema.
 
+## 📚 Fonte dos Dados
+
+A base de dados utilizada neste projeto foi obtida a partir do site **KAGGLE*, sendo utilizada exclusivamente para fins educacionais e de estudo.
+
+Os dados foram tratados e adaptados para simular um cenário real de cadastro automatizado em um sistema web.
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -58,12 +64,6 @@ Cada linha do arquivo representa um cadastro no sistema.
 ### Ferramentas
 - Git & GitHub
 - VS Code
-
-## 📚 Fonte dos Dados
-
-A base de dados utilizada neste projeto foi obtida a partir do site **[KAGLLE]**, sendo utilizada exclusivamente para fins educacionais e de estudo.
-
-Os dados foram tratados e adaptados para simular um cenário real de cadastro automatizado em um sistema web.
 
 ---
 
