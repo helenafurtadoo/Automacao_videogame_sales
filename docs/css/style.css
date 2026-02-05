@@ -17,10 +17,10 @@ h3 {
 }
 
 .imgLogo {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 15%; /* Reduzido para compactar */
+    width: 5%; /* Reduzido para compactar */
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona profundidade */ 
 }
@@ -136,7 +136,22 @@ h3 {
     background-color: #5a5a5a; /* Cinza mais escuro */
 }
 
+.tabela-container {
+  width: 95%;
+  margin: 20px auto;
+
+  height: 260px;        /* altura fixa visível */
+  overflow-y: auto;     /* scroll só dentro da tabela */
+
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  flex: 1;
+  
+}
+
 #tabelaProdutos {
+
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px; /* Mesmo espaçamento do form */
@@ -155,7 +170,13 @@ h3 {
 #tabelaProdutos th {
     background-color: #8a2be2; /* Roxo para cabeçalho */
     color: white;
+  position: sticky;
+  top: 0;
+  background-color: #7b2ce2; /* seu roxo */
+  color: white;
+  z-index: 2;
 }
+
 
 #tabelaProdutos tr:nth-child(even) {
     background-color: #e0e0e0; /* Cinza alternado */
@@ -182,7 +203,7 @@ h3 {
     }
 
     .imgLogo {
-        width: 50%; /* Maior em telas pequenas */
+        width: 10%; /* Maior em telas pequenas */
     }
 
     #formJogos {
@@ -220,7 +241,7 @@ h3 {
     }
 
     .imgLogo {
-        width: 70%;
+        width: 10%;
     }
 
     #formJogos {
