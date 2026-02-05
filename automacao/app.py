@@ -42,6 +42,9 @@ pyautogui.press('enter')
     # PAUSA MAIOR --> usar toda vez que entrar/mudar de pagina web, para evitar erro de internet
         #time.sleep(segundos)
 time.sleep(3)
+
+    # scroll a tela um pouco para baixo
+pyautogui.scroll(-2)
     # clicar no campo email (+ achar as coordenadas do campo --> time.sleep(5) | print(pyautogui.position())  )
 pyautogui.click(x=870, y=646)
 
