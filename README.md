@@ -67,14 +67,5 @@ Os dados foram tratados e adaptados para simular um cenário real de cadastro au
 
 ---
 
-## ▶️ Como Executar o Projet
-
-### 1️⃣ Executar o site
-Abra o arquivo `index.html` em um navegador moderno.
-
-### 2️⃣ Executar a automação
-```bash
-pip install -r requirements.txt
-python app.py
 
 
