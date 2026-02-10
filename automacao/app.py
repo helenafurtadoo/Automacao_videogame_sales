@@ -1,17 +1,18 @@
-import pandas
 import pandas as pd
 from pathlib import Path
+import time
+import pyautogui
+# bilbiotecas: pyautogui (para a pausa entre passos)| time (para a pausa maior entre paginas) | pandas (para a base de dados)
+
+
 BASE = Path(__file__).resolve().parent.parent  # se app.py está em automacao/
 csv_path = BASE / "dados" / "data_sales.csv"
 sales = pd.read_csv(csv_path)
-# procurando o caminho dos dados
 
-
-# bilbiotecas a usar: pyautogui (para a pausa entre passos)| time (para a pausa maior entre paginas) | pandas (para a base de dados)
-import time
-import pyautogui
 pyautogui.PAUSE = 3
-def main() :
+
+
+def main():
 
     link_sistema = 'https://helenafurtadoo.github.io/Automacao_videogame_sales/'
     # PASSOS PARA A AUTOMAÇÃO:
@@ -20,7 +21,7 @@ def main() :
     pyautogui.press('win')
     pyautogui.write('google')
     pyautogui.press('enter')
-    
+
     # clicar para tela cheia, caso o google abra pequeno
     pyautogui.click(x=1300, y=115)
 
@@ -43,9 +44,10 @@ def main() :
 
     # 3°- abrir base de dados
     sales = pd.read_csv(csv_path)
-    base_final = sales.drop(columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"])
+    base_final = sales.drop(
+        columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"])
     pyautogui.scroll(-500)
-    
+
     # 4°- cadastrar produtos
     for linha in base_final.index:
         # clicar no campo RANKING DE VENDAS (pegar a coordenada)
@@ -101,6 +103,7 @@ def main() :
         pyautogui.press('enter')
 
         # 5°- repetir o passo 4 ate acabar a base de dados
+
 
 if __name__ == "__main__":
     main()
