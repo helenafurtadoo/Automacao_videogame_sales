@@ -3,18 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 # procurando o caminho dos dados
-# base_dir = Path(__file__).parent
-# csv_path = base_dir.parent / "dados" / "data_sales.csv"
 
-
-# excluindo as colunas irrelevantes, para deixar o codigo mais limpo
-# sales = sales.drop(columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"])
-
-# salvar mudanças no arquivo original (sobrescreve)
-# sales.to_csv("dados/data_sales.csv", index=False)
-
-# mostrando a tabela depois das mudancas
-# print(sales.info)
 
 # bilbiotecas a usar: pyautogui (para a pausa entre passos)| time (para a pausa maior entre paginas) | pandas (para a base de dados)
 import time
@@ -76,7 +65,7 @@ sales = pd.read_csv("dados/data_sales.csv")
 # excluindo as colunas irrelevantes, para deixar o codigo mais limpo
 base_final = sales.drop(columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"])
 
-# scroll a tela para baixosenhaimaginariasitema 
+# scroll a tela para baixosenhaimaginariasitema
 pyautogui.scroll(-500)
 # 4°- cadastrar produtos
 for linha in base_final.index:
@@ -107,15 +96,12 @@ for linha in base_final.index:
     ano_lancamento = str(base_final.loc[linha, "Year"])
     pyautogui.write(ano_lancamento)
 
-
-
     # proximo campo
     pyautogui.press('tab')
 
     # escrever o GENERO DO JOGO
     genero = str(base_final.loc[linha, "Genre"])
     pyautogui.write(genero)
-
 
     # proximo campo
     pyautogui.press('tab')
@@ -124,7 +110,6 @@ for linha in base_final.index:
     editora = str(base_final.loc[linha, "Publisher"])
     pyautogui.write(editora)
 
-
     # proximo campo
     pyautogui.press('tab')
 
@@ -132,11 +117,8 @@ for linha in base_final.index:
     total_vendas = str(base_final.loc[linha, "Global_Sales"])
     pyautogui.write(total_vendas)
 
-
     # proximo campo ('tab' -> botao enviar)
     pyautogui.press('tab')
     pyautogui.press('enter')
-
-    
 
     # 5°- repetir o passo 4 ate acabar a base de dados
