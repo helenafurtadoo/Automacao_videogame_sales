@@ -8,8 +8,7 @@ import pyautogui
 BASE = Path(__file__).resolve().parent.parent  # se app.py está em automacao/
 csv_path = BASE / "dados" / "data_sales.csv"
 sales = pd.read_csv(csv_path)
-
-pyautogui.PAUSE = 3
+pyautogui.PAUSE = 2
 
 
 def main():
@@ -44,14 +43,12 @@ def main():
 
     # 3°- abrir base de dados
     sales = pd.read_csv(csv_path)
-    base_final = sales.drop(
-        columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"])
-    pyautogui.scroll(-500)
+    base_final = sales.drop(columns=["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"])
 
     # 4°- cadastrar produtos
     for linha in base_final.index:
         # clicar no campo RANKING DE VENDAS (pegar a coordenada)
-        pyautogui.click(x=884, y=246)
+        pyautogui.click(x=748, y=300)
 
         # escrever o numero do RANKING
         ranking = str(base_final.loc[linha, "Rank"])
