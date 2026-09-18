@@ -47,7 +47,7 @@ Os dados foram tratados e adaptados para simular um cenário real de cadastro au
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 ### Front-end
 - HTML5
