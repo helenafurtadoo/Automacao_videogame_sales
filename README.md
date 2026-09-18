@@ -1,4 +1,4 @@
-# 🎮 SalesDB – Sistema de Cadastro de Jogos com Automação
+#  SalesDB – Sistema de Cadastro de Jogos com Automação
 
 O **SalesDB** é um sistema web desenvolvido para **cadastro e visualização de dados da venda de jogos**, integrado a uma **automação em Python** responsável por inserir automaticamente registros no sistema a partir de uma base de dados.
 
@@ -6,16 +6,16 @@ O projeto simula um **sistema real de uso interno**, unindo **front-end**, **Jav
 
 ---
 
-## 📌 Funcionalidades
+##  Funcionalidades
 
-### 🌐 Sistema Web
-- 🔐 Tela de **login**
-- 📝 Formulário de **cadastro de jogos**
-- 📊 Tabela dinâmica de registros
-- 🧹 Limpeza da tabela
-- 🎨 Layout organizado e responsivo
+###  Sistema Web
+- Tela de **login**
+- Formulário de **cadastro de jogos**
+- Tabela dinâmica de registros
+- Limpeza da tabela
+- Layout organizado e responsivo
 
-### 🤖 Automação em Python
+### Automação em Python
 - Leitura de base de dados (`.csv`)
 - Preenchimento automático do formulário no site
 - Simulação de interação humana
@@ -25,7 +25,7 @@ O projeto simula um **sistema real de uso interno**, unindo **front-end**, **Jav
 
 ---
 
-## 🧪 Base de Dados
+## Base de Dados
 
 A automação utiliza uma base de dados no formato `.csv`, contendo campos como:
 
